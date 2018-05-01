@@ -4,25 +4,21 @@
 
 'use strict'
 
-let colorsContainer = document.getElementById('colors');
+let colorsContainer = document.getElementById('colors')
 
-chrome.storage.sync.get("allColors", function(data){
-  for(let i=0;i<data.allColors.length; i++) {
-    let btn = document.createElement("button")
+chrome.storage.sync.get('allColors', function (data) {
+  for (let i = 0; i < data.allColors.length; i++) {
+    let btn = document.createElement('button')
     btn.style.backgroundColor = data.allColors[i]
-    btn.addEventListener("click", function(event) {
+    btn.addEventListener('click', function (event) {
       let colorCode = event.target.style.backgroundColor
-      chrome.storage.sync.set({color: colorCode}, function() {
-        console.log('color is ' + colorCode) ;
+      chrome.storage.sync.set({color: colorCode}, function () {
+        console.log('color is ' + colorCode)
       })
       console.log(colorCode)
-        //chrome.tabs.executeScript(
-          //  {code: 'document.body.style.backgroundColor = "' + color + '";'});
+      // chrome.tabs.executeScript(
+      //  {code: 'document.body.style.backgroundColor = "' + color + '";'});
     })
     colorsContainer.appendChild(btn)
-  
   }
-  
 })
-
-
