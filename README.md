@@ -1,3 +1,7 @@
+# 3. kodutöö - Teet Triisa
+
+Chrome extension, mis minnes messenger.com lehele, otsib ülesse "seen" mullikesed, ning annab neile värvilise borderi. Seda sellepärast kui kellegil tarkpeal on valge profiilipilt, on raske näha kas nad on sõnumit näinud või ei. Extensioni installimisel lisatakse algsed neli värvi ja üks default värv. Olles domeenil messenger.com muutub ka extensioni pop-up kasutatavaks, kus saab borderi värvi valida. Valitud värv salvestub ka chrome storage'sse ehk värv jääb samaks kui vahepeal lehte värskendad. Värvi valikusse saab värve lisada ja kustutada extensioni optionsist.
+
 # 3. kodutöö – Chrome extension
 
 Kodutööna peab looma Chrome extension'i selliselt, et nõuded oleksid täidetud. Soovi korral võib ka teha Firefox'ile.

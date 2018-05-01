@@ -1,0 +1,19 @@
+{
+	"name": "Messenger seen border",
+	"version": "1.0",
+	"description": "Build an Extension!",
+	"permissions": ["activeTab", "tabs", "declarativeContent", "storage", "https://www.messenger.com/*"],
+	"content_scripts": [{
+      "matches": ["https://www.messenger.com/*"],
+      "js": ["myscript.js"]
+    }],
+	"background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+	"options_page": "options.html",
+	"page_action": {
+      "default_popup": "popup.html"
+    },
+	"manifest_version": 2
+}
